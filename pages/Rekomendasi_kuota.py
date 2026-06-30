@@ -108,6 +108,6 @@ st.download_button(
 # ── Sidebar logout ────────────────────────────────
 with st.sidebar:
     st.write(f"👤 {st.session_state.get('username', '')}")
-    if st.button("🚪 Logout"):
+    if st.button("Logout"):
         st.session_state.clear()
         st.rerun()
