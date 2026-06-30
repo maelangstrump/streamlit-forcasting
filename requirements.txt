@@ -4,3 +4,4 @@ plotly
 openpyxl
 pmdarima
 scikit-learn
+matplotlib
