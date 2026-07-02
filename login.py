@@ -1,7 +1,7 @@
 import streamlit as st
 
 USERS = {
-    "admin": "smkn1sakra",
+    "user": "smkn1sakra",
     "kepsek": "ppdb2025"
 }
 
