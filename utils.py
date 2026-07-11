@@ -92,3 +92,41 @@ def cek_login():
     ):
         st.warning("⚠️ Silakan login terlebih dahulu.")
         st.stop()
+
+# ===============================
+# CUSTOM CSS GLOBAL
+# ===============================
+def set_custom_css():
+    st.markdown("""
+        <style>
+        /* Background hijau muda semua halaman */
+        .stApp {
+            background-color: #E8F5E9 !important;
+        }
+
+        /* Paksa semua teks hitam */
+        html, body, [class*="css"], .stMarkdown, .stText,
+        .stMetric, .stCaption, p, h1, h2, h3, h4, h5, h6,
+        label, span, div {
+            color: #000000 !important;
+        }
+
+        /* Sidebar background hijau tua */
+        [data-testid="stSidebar"] {
+            background-color: #2E7D1F !important;
+        }
+
+        /* Sidebar teks putih */
+        [data-testid="stSidebar"] * {
+            color: white !important;
+        }
+
+        /* Tombol logout sidebar */
+        [data-testid="stSidebar"] button {
+            background-color: white !important;
+            color: #2E7D1F !important;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        </style>
+    """, unsafe_allow_html=True)
