@@ -7,7 +7,48 @@ st.set_page_config(
     page_icon="🏠",
     layout="wide"
 )
+# ── Custom CSS Sidebar Hijau ──────────────────────
+st.markdown("""
+    <style>
+    /* Sidebar background */
+    [data-testid="stSidebar"] {
+        background-color: #2E7D1F !important;
+    }
 
+    /* Semua teks di sidebar */
+    [data-testid="stSidebar"] * {
+        color: white !important;
+    }
+
+    /* Menu item aktif */
+    [data-testid="stSidebar"] [aria-selected="true"] {
+        background-color: #1B5E13 !important;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    /* Hover menu item */
+    [data-testid="stSidebar"] a:hover {
+        background-color: #3DAA2A !important;
+        border-radius: 8px;
+    }
+
+    /* Tombol Logout */
+    [data-testid="stSidebar"] button {
+        background-color: white !important;
+        color: #2E7D1F !important;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    /* Divider di sidebar */
+    [data-testid="stSidebar"] hr {
+        border-color: rgba(255,255,255,0.3) !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+# ─────────────────────────────────────────────────
 from login import show_login
 from utils import cek_login
 
