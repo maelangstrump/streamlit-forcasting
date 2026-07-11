@@ -7,7 +7,7 @@ from utils import load_data, load_model, get_daftar_jurusan, cek_login, set_cust
 
 st.set_page_config(page_title="Prediksi", page_icon="", layout="wide")
 cek_login()
-set_custom_css()
+c
 
 st.title("Prediksi Minat Jurusan")
 st.caption("Hasil forecasting ARIMA untuk tahun yang dipilih")
