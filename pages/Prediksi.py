@@ -3,10 +3,11 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from io import BytesIO
-from utils import load_data, load_model, get_daftar_jurusan, cek_login
+from utils import load_data, load_model, get_daftar_jurusan, cek_login, set_custom_css
 
 st.set_page_config(page_title="Prediksi", page_icon="", layout="wide")
 cek_login()
+set_custom_css()
 
 st.title("Prediksi Minat Jurusan")
 st.caption("Hasil forecasting ARIMA untuk tahun yang dipilih")
